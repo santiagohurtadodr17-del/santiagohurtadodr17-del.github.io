@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VIP Signals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .header {
+      background: #111827;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    button {
+      width: 90%;
+      padding: 15px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .btn-signal {
+      background: #22c55e;
+      color: white;
+    }
+
+    .btn-play {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-vip {
+      background: gold;
+      color: black;
+    }
+
+    .resultado {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">🚀 VIP SIGNALS</div>
+
+<div class="container">
+
+<button class="btn-signal" onclick="generar()">🌀 Obtener señal</button>
+
+<button class="btn-play" onclick="jugar()">▶️ Jugar</button>
+
+<button class="btn-vip" onclick="vip()">💎 VIP</button>
+
+<div class="resultado" id="resultado">Esperando señal...</div>
+
+</div>
+
+<script>
+
+function generar() {
+  let señales = [
+    "🟢 ENTRA YA - Retira en X1.5",
+    "🟢 ENTRA - Retira en X1.7",
+    "🟡 ESPERA 1 RONDA - X2.5",
+    "🟡 ENTRA SUAVE - X3",
+    "🔴 ALTO RIESGO - X5+"
+  ];
+
+  let random = Math.floor(Math.random() * señales.length);
+  document.getElementById("resultado").innerText = señales[random];
+}
+
+function jugar() {
+  window.location.href = "https://1xbet.com";
+}
+
+function vip() {
+  alert("💎 Acceso VIP próximamente...\nContáctanos por Telegram");
+}
+
+</script>
+
+</body>
+</html>
